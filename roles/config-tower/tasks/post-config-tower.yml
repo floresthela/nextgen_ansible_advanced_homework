@@ -1,4 +1,12 @@
 - name: Create Homework Assignment project
+  tower_project:
+    name: "{{proj_name}}"
+    description: "Final homework for course"
+    organization: "{{org_name}}"
+    state: present
+    scm_type: git
+    scm_branch: master
+    scm_url: https://github.com/floresthela/nextgen_ansible_advanced_homework    
 
 
 - name: Machine Credentail to connect to workstation using openstack.pub
